@@ -25,10 +25,32 @@ body {
   max-width: 42em;
 }
 
+/* adding padding on body text so text doesn't start hidden below fixed header -MFM*/
+.px-3{
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
 
 /*
  * Header
  */
+
+.nav-masthead, .mt-auto{ /* added to fix the header and footer position to page view -MFM */
+ /* border: 5px dashed orange;  used this section to visually see what was happeneing*/ 
+  text-align: center;
+  position: fixed;
+  width: 650px;
+  background-color: rgb(38, 37, 37);
+}
+
+.nav-masthead{
+  top: 0;
+}
+
+.mt-auto{
+  bottom: 0;
+}
+
 
 .nav-masthead .nav-link {
   color: rgba(255, 255, 255, .5);
